@@ -1,8 +1,11 @@
 Which Artists has the highest song in the top 100?
+
 SECLECTartists,
 COUNT(artists) FROM `dataverse-393712.SPOTIFY.Spotify-2018`
 GROUP BY 1
-2. Are there more artists in the top 100 with 'DJ' or 'Lil' in their name?
+
+Are there more artists in the top 100 with 'DJ' or 'Lil' in their name?
+
 SELECT 
 'Lil' AS Type,
 COUNT(DISTINCT ARTISTS) AS Number_of_Artist
